@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Kaam Kar Bhai",
+    "version": "1.0.0",
+    "icons": {
+        "16": "/icons/16.png",
+        "48": "/icons/48.png",
+        "128": "/icons/128.png"
+    },
+    "content_scripts": [
+        {
+            "matches":["<all_urls>"],
+            "js": ["blocker.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["/icons/","*.jpg"],
+          "matches": ["<all_urls>"]
+        }]
+}
